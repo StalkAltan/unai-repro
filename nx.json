@@ -22,7 +22,8 @@
           "build",
           "lint",
           "test",
-          "e2e"
+          "e2e",
+          "tsCheck"
         ],
         "accessToken": "MzVmYjRmYmItN2VhZi00MDIxLTg1NTctZGJmZTQxYzViNjc0fHJlYWQtd3JpdGU="
       }
