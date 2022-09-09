@@ -64,6 +64,11 @@
     },
     "tsCheck": {
       "executor": "@repro/test:build",
+      "inputs": [
+        {
+          "runtime": "date"
+        }
+      ],
       "options": {}
     },
     "extract-i18n": {
