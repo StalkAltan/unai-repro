@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "test",
+  "version": "0.0.1",
+  "generators": {
+    "test": {
+      "factory": "./src/generators/test/generator",
+      "schema": "./src/generators/test/schema.json",
+      "description": "test generator"
+    }
+  }
+}
