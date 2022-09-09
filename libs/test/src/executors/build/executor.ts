@@ -13,7 +13,6 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
       : 'npx'
 
   const libRoot = context.workspace.projects[context.projectName!!].root;
-    console.log("LIBROOT", libRoot);
 
     const executionCode = await new Promise((res) => {
       const args = [
@@ -23,7 +22,6 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
           '--noEmit',
           'true'
         ]
-      console.log(args.join(' '));
 
       const child = spawn(
         packageManagerCmd,
