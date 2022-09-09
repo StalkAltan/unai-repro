@@ -16,7 +16,7 @@ jobs:
         npx nx-cloud start-ci-run --stop-agents-after="tsCheck" --agent-count=3
       parallel-commands: |
       parallel-commands-on-agents: |
-        npx nx affected --target=tsCheck --parallel=3
+        npx nx affected --target=tsCheck --parallel=3 --skip-nx-cache
 
   agents:
     name: Nx Cloud - Agents
